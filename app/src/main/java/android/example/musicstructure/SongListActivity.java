@@ -50,8 +50,6 @@ public class SongListActivity extends AppCompatActivity {
                 intent.putExtra("song", String.valueOf(songs.get(position).getDefaultSong()));
                 intent.putExtra("singer", String.valueOf(songs.get(position).getDefaultSinger()));
                 startActivity(intent);
-                //Log.i("Item pressed", String.valueOf(songs.get(position)));
-                //Toast.makeText(SongListActivity.this, String.valueOf(songs.get(position).getDefaultSong()), Toast.LENGTH_SHORT).show();
             }
         });
 
