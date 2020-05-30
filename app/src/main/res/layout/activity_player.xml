@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerActivity">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/music"
+        tools:srcCompat="@drawable/music"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/image"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Song"
+        android:layout_below="@+id/image"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="26sp"
+        android:textColor="#000000"
+        android:id="@+id/song_name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Song"
+        android:layout_below="@+id/song_name"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        android:id="@+id/singer_name"/>
+    <SeekBar
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/singer_name"
+        android:layout_marginTop="30dp"
+        android:id="@+id/seekBar"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/seekBar"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/previous"
+        app:srcCompat="@android:drawable/ic_media_previous"
+        tools:srcCompat="@android:drawable/ic_media_previous" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/seekBar"
+        android:layout_toRightOf="@+id/previous"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/play"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/seekBar"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/play"
+        android:id="@+id/next"
+        app:srcCompat="@android:drawable/ic_media_next" />
+
+</RelativeLayout>
+</ScrollView>
